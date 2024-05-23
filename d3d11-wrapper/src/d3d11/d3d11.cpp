@@ -50,7 +50,7 @@ void hook_exports()
     SP_LOG("Found %d out of %d.\n", count, d3d11::func_count);
 
     //×¢Èërenderdoc
-    std::string rdcpath = "rd.dll";
+    std::string rdcpath = "renderdoc.dll";
     HMODULE renderdoc = LoadLibrary(rdcpath.c_str());
     if (!renderdoc) {
         MessageBox(NULL, "Unable to locate renderdoc (or compatible library to chain)", "ERROR: Failed to load original d3d11.dll", NULL);

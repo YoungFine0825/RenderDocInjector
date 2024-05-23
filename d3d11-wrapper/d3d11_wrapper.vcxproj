@@ -139,7 +139,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>src/d3d11/exports.def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>F:\Dev\d3d11-wrapper\bin\Debug\x64;lib;../lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>bin\Debug\x64;lib;../lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sp_utils_dbg_x64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -176,7 +176,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;D3D11WRAPPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>include;lib;lib/inih;lib/inih/cpp;../include;../lib;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../Cpp-Utilities/include;include;lib;lib/inih;lib/inih/cpp;../include;../lib</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
@@ -185,7 +185,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>src/d3d11/exports.def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>lib;../lib;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>bin\Release\x64;lib;../lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sp_utils_x64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
