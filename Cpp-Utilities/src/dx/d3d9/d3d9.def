@@ -1,0 +1,9 @@
+;  CONTRIBUTORS:
+;    Sean Pesce
+;
+;  Some functions were generated with a modified version of Lin "MavenLin" Min's DLL Wrapper Generator:
+;      https://github.com/mavenlin/Dll_Wrapper_Gen
+
+LIBRARY d3d9.dll
+EXPORTS
+    ; @TODO

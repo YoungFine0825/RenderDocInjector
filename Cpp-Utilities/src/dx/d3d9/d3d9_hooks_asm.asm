@@ -1,0 +1,75 @@
+;  CONTRIBUTORS:
+;    Sean Pesce
+;
+;  Functions generated with a modified version of Lin "MavenLin" Min's DLL Wrapper Generator:
+;      https://github.com/mavenlin/Dll_Wrapper_Gen
+
+.code
+extern d3d9_original_procs:QWORD
+D3DPERF_BeginEvent_jmp proc
+    jmp d3d9_original_procs[0*8]
+D3DPERF_BeginEvent_jmp endp
+D3DPERF_EndEvent_jmp proc
+    jmp d3d9_original_procs[1*8]
+D3DPERF_EndEvent_jmp endp
+D3DPERF_GetStatus_jmp proc
+    jmp d3d9_original_procs[2*8]
+D3DPERF_GetStatus_jmp endp
+D3DPERF_QueryRepeatFrame_jmp proc
+    jmp d3d9_original_procs[3*8]
+D3DPERF_QueryRepeatFrame_jmp endp
+D3DPERF_SetMarker_jmp proc
+    jmp d3d9_original_procs[4*8]
+D3DPERF_SetMarker_jmp endp
+D3DPERF_SetOptions_jmp proc
+    jmp d3d9_original_procs[5*8]
+D3DPERF_SetOptions_jmp endp
+D3DPERF_SetRegion_jmp proc
+    jmp d3d9_original_procs[6*8]
+D3DPERF_SetRegion_jmp endp
+DebugSetLevel_jmp proc
+    jmp d3d9_original_procs[7*8]
+DebugSetLevel_jmp endp
+DebugSetMute_jmp proc
+    jmp d3d9_original_procs[8*8]
+DebugSetMute_jmp endp
+Direct3D9EnableMaximizedWindowedModeShim_jmp proc
+    jmp d3d9_original_procs[9*8]
+Direct3D9EnableMaximizedWindowedModeShim_jmp endp
+Direct3DCreate9_jmp proc
+    jmp d3d9_original_procs[10*8]
+Direct3DCreate9_jmp endp
+Direct3DCreate9Ex_jmp proc
+    jmp d3d9_original_procs[11*8]
+Direct3DCreate9Ex_jmp endp
+Direct3DShaderValidatorCreate9_jmp proc
+    jmp d3d9_original_procs[12*8]
+Direct3DShaderValidatorCreate9_jmp endp
+PSGPError_jmp proc
+    jmp d3d9_original_procs[13*8]
+PSGPError_jmp endp
+PSGPSampleTexture_jmp proc
+    jmp d3d9_original_procs[14*8]
+PSGPSampleTexture_jmp endp
+ExportByOrdinal16 proc
+    jmp d3d9_original_procs[15*8]
+ExportByOrdinal16 endp
+ExportByOrdinal17 proc
+    jmp d3d9_original_procs[16*8]
+ExportByOrdinal17 endp
+ExportByOrdinal18 proc
+    jmp d3d9_original_procs[17*8]
+ExportByOrdinal18 endp
+ExportByOrdinal19 proc
+    jmp d3d9_original_procs[18*8]
+ExportByOrdinal19 endp
+ExportByOrdinal20 proc
+    jmp d3d9_original_procs[19*8]
+ExportByOrdinal20 endp
+ExportByOrdinal21 proc
+    jmp d3d9_original_procs[20*8]
+ExportByOrdinal21 endp
+ExportByOrdinal22 proc
+    jmp d3d9_original_procs[21*8]
+ExportByOrdinal22 endp
+end

@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D78781B-5796-4E64-9CBB-4A448FBC249E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sp_utils</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>bin\$(Configuration)\$(Platform)\obj\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\$(Platform)\</OutDir>
+    <TargetName>$(ProjectName)_dbg_x86</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>bin\$(Configuration)\$(Platform)\obj\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\$(Platform)\</OutDir>
+    <TargetName>$(ProjectName)_x86</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>bin\$(Configuration)\$(Platform)\obj\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\$(Platform)\</OutDir>
+    <TargetName>$(ProjectName)_dbg_$(Platform)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>bin\$(Configuration)\$(Platform)\obj\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\$(Platform)\</OutDir>
+    <TargetName>$(ProjectName)_$(Platform)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;lib;lib/inih;lib/inih/cpp;</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(SolutionDir)\bin\$(Configuration)\$(Platform)\$(ProjectName)_dbg_x86.pdb</ProgramDataBaseFileName>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;lib;lib/inih;lib/inih/cpp;</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(SolutionDir)\bin\$(Configuration)\$(Platform)\$(ProjectName)_dbg_$(Platform).pdb</ProgramDataBaseFileName>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;lib;lib/inih;lib/inih/cpp;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)\bin\$(Configuration)\$(Platform)\$(ProjectName)_x86.pdb</ProgramDataBaseFileName>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;lib;lib/inih;lib/inih/cpp;</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(SolutionDir)\bin\$(Configuration)\$(Platform)\$(ProjectName)_$(Platform).pdb</ProgramDataBaseFileName>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\inih\cpp\INIReader.cpp" />
+    <ClCompile Include="lib\inih\ini.c" />
+    <ClCompile Include="src\config\ini_cfg.cpp" />
+    <ClCompile Include="src\dx\d3d9\d3d9_exports.cpp" />
+    <ClCompile Include="src\dx\d3d9\d3d9_hooks.cpp" />
+    <ClCompile Include="src\dx\d3d9\d3d9_main.cpp" />
+    <ClCompile Include="src\dx\dx.cpp" />
+    <ClCompile Include="src\dx\dxgi\dxgi_errors.cpp" />
+    <ClCompile Include="src\dx\dxgi\dxgi_exports.cpp" />
+    <ClCompile Include="src\dx\dxgi\dxgi_hooks.cpp" />
+    <ClCompile Include="src\dx\dxgi\dxgi_main.cpp" />
+    <ClCompile Include="src\file.cpp" />
+    <ClCompile Include="src\io.cpp" />
+    <ClCompile Include="src\log.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\main\preferences.cpp" />
+    <ClCompile Include="src\memory.cpp" />
+    <ClCompile Include="src\memory\aob_scan.cpp" />
+    <ClCompile Include="src\memory\injection\asm\x64.cpp" />
+    <ClCompile Include="src\memory\injection\asm\x86.cpp" />
+    <ClCompile Include="src\os\windows.cpp" />
+    <ClCompile Include="src\os\windows\com\com_main.cpp" />
+    <ClCompile Include="src\os\windows\com\interface\iunknown.cpp" />
+    <ClCompile Include="src\os\windows\dll.cpp" />
+    <ClCompile Include="src\sp.cpp" />
+    <ClCompile Include="src\string.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\dx\d3d9\d3d9.def" />
+    <None Include="src\dx\d3d9\d3d9_hooks_asm.asm" />
+    <None Include="src\dx\dxgi\dxgi.def" />
+    <None Include="src\dx\dxgi\dxgi_hooks_asm.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\sp\config\ini_cfg.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext1.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext1_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext2.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext2_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext3.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext3_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext4.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext4_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device1.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device2.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device2_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device3.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device3_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device4.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device4_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device5.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device5_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device1_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\id3d11devicechild.h" />
+    <ClInclude Include="include\sp\dx\d3d11\interface\id3d11devicechild_impl.hpp" />
+    <ClInclude Include="include\sp\dx\d3d9\d3d9_exports.h" />
+    <ClInclude Include="include\sp\dx\d3d9\d3d9_hooks.h" />
+    <ClInclude Include="include\sp\dx\d3d9\d3d9_main.h" />
+    <ClInclude Include="include\sp\dx\dxgi\dxgi_errors.h" />
+    <ClInclude Include="include\sp\dx\dxgi\dxgi_exports.h" />
+    <ClInclude Include="include\sp\dx\dxgi\dxgi_hooks.h" />
+    <ClInclude Include="include\sp\dx\dxgi\dxgi_main.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice1.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice2.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice3.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice4.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice1_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice2_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice3_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice4_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory1.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory1_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory2.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory2_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory3.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory3_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory4.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory4_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory5.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory5_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgiadapter.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgiadapter_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgiobject.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgiobject_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgisubobject.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgisubobject_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain1.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain1_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain2.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain2_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain3.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain3_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain4.h" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain4_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain_impl.hpp" />
+    <ClInclude Include="include\sp\dx\dx_main.h" />
+    <ClInclude Include="include\sp\environment.h" />
+    <ClInclude Include="include\sp\error.h" />
+    <ClInclude Include="include\sp\error\error_code.h" />
+    <ClInclude Include="include\sp\file.h" />
+    <ClInclude Include="include\sp\file\file_overloads.hpp" />
+    <ClInclude Include="include\sp\file\path.h" />
+    <ClInclude Include="include\sp\gui\console.h" />
+    <ClInclude Include="include\sp\gui\console\console_message.h" />
+    <ClInclude Include="include\sp\gui\console\console_output.h" />
+    <ClInclude Include="include\sp\gui\console\console_output_interface.h" />
+    <ClInclude Include="include\sp\gui\input\text\caret.h" />
+    <ClInclude Include="include\sp\gui\message_box.h" />
+    <ClInclude Include="include\sp\io.h" />
+    <ClInclude Include="include\sp\io\cmd_ostream.h" />
+    <ClInclude Include="include\sp\io\keybinds.h" />
+    <ClInclude Include="include\sp\io\powershell_ostream.h" />
+    <ClInclude Include="include\sp\io\vk_names.h" />
+    <ClInclude Include="include\sp\log.h" />
+    <ClInclude Include="include\sp\main.h" />
+    <ClInclude Include="include\sp\main\preferences.h" />
+    <ClInclude Include="include\sp\memory.h" />
+    <ClInclude Include="include\sp\memory\aob_scan.h" />
+    <ClInclude Include="include\sp\memory\injection\asm\x64.h" />
+    <ClInclude Include="include\sp\memory\injection\asm\x86.h" />
+    <ClInclude Include="include\sp\memory\patch.h" />
+    <ClInclude Include="include\sp\memory\patch\byte_patch.h" />
+    <ClInclude Include="include\sp\memory\pointer.h" />
+    <ClInclude Include="include\sp\os.h" />
+    <ClInclude Include="include\sp\os\unix.h" />
+    <ClInclude Include="include\sp\os\win.h" />
+    <ClInclude Include="include\sp\os\windows\com\com_main.h" />
+    <ClInclude Include="include\sp\os\windows\com\interface\iunknown.h" />
+    <ClInclude Include="include\sp\os\windows\com\interface\iunknown_impl.hpp" />
+    <ClInclude Include="include\sp\os\windows\dll.h" />
+    <ClInclude Include="include\sp\preferences\user_setting.h" />
+    <ClInclude Include="include\sp\preprocessor.h" />
+    <ClInclude Include="include\sp\sp.h" />
+    <ClInclude Include="include\sp\string.h" />
+    <ClInclude Include="include\sp\string\string_overloads.hpp" />
+    <ClInclude Include="include\sp\system.h" />
+    <ClInclude Include="include\sp\system\process.h" />
+    <ClInclude Include="include\sp\system\process\child.h" />
+    <ClInclude Include="include\sp\utilities.h" />
+    <ClInclude Include="include\sp\utility\history.h" />
+    <ClInclude Include="lib\inih\cpp\INIReader.h" />
+    <ClInclude Include="lib\inih\ini.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

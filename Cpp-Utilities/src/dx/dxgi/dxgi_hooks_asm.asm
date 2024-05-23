@@ -1,0 +1,69 @@
+;  CONTRIBUTORS:
+;    Sean Pesce
+;
+;  Functions generated with a modified version of Lin "MavenLin" Min's DLL Wrapper Generator:
+;      https://github.com/mavenlin/Dll_Wrapper_Gen
+
+.code
+extern dxgi_original_procs:QWORD
+ApplyCompatResolutionQuirking_jmp proc
+    jmp dxgi_original_procs[0*8]
+ApplyCompatResolutionQuirking_jmp endp
+CompatString_jmp proc
+    jmp dxgi_original_procs[1*8]
+CompatString_jmp endp
+CompatValue_jmp proc
+    jmp dxgi_original_procs[2*8]
+CompatValue_jmp endp
+CreateDXGIFactory_jmp proc
+    jmp dxgi_original_procs[3*8]
+CreateDXGIFactory_jmp endp
+CreateDXGIFactory1_jmp proc
+    jmp dxgi_original_procs[4*8]
+CreateDXGIFactory1_jmp endp
+CreateDXGIFactory2_jmp proc
+    jmp dxgi_original_procs[5*8]
+CreateDXGIFactory2_jmp endp
+DXGID3D10CreateDevice_jmp proc
+    jmp dxgi_original_procs[6*8]
+DXGID3D10CreateDevice_jmp endp
+DXGID3D10CreateLayeredDevice_jmp proc
+    jmp dxgi_original_procs[7*8]
+DXGID3D10CreateLayeredDevice_jmp endp
+DXGID3D10ETWRundown_jmp proc
+    jmp dxgi_original_procs[8*8]
+DXGID3D10ETWRundown_jmp endp
+DXGID3D10GetLayeredDeviceSize_jmp proc
+    jmp dxgi_original_procs[9*8]
+DXGID3D10GetLayeredDeviceSize_jmp endp
+DXGID3D10RegisterLayers_jmp proc
+    jmp dxgi_original_procs[10*8]
+DXGID3D10RegisterLayers_jmp endp
+DXGIDumpJournal_jmp proc
+    jmp dxgi_original_procs[11*8]
+DXGIDumpJournal_jmp endp
+DXGIGetDebugInterface1_jmp proc
+    jmp dxgi_original_procs[12*8]
+DXGIGetDebugInterface1_jmp endp
+DXGIReportAdapterConfiguration_jmp proc
+    jmp dxgi_original_procs[13*8]
+DXGIReportAdapterConfiguration_jmp endp
+DXGIRevertToSxS_jmp proc
+    jmp dxgi_original_procs[14*8]
+DXGIRevertToSxS_jmp endp
+PIXBeginCapture_jmp proc
+    jmp dxgi_original_procs[15*8]
+PIXBeginCapture_jmp endp
+PIXEndCapture_jmp proc
+    jmp dxgi_original_procs[16*8]
+PIXEndCapture_jmp endp
+PIXGetCaptureState_jmp proc
+    jmp dxgi_original_procs[17*8]
+PIXGetCaptureState_jmp endp
+SetAppCompatStringPointer_jmp proc
+    jmp dxgi_original_procs[18*8]
+SetAppCompatStringPointer_jmp endp
+UpdateHMDEmulationStatus_jmp proc
+    jmp dxgi_original_procs[19*8]
+UpdateHMDEmulationStatus_jmp endp
+end

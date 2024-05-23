@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\lib">
+      <UniqueIdentifier>{30ef3c63-6d94-451b-9754-26c8a963c4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp">
+      <UniqueIdentifier>{d6e0e57e-41fd-4942-8052-1d892a73b4d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\config">
+      <UniqueIdentifier>{c178de89-55e3-4052-80e2-54d205074249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx">
+      <UniqueIdentifier>{a321e30b-1190-4ea1-a25e-48cd904af771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\d3d9">
+      <UniqueIdentifier>{99f6286c-6b54-41a5-be32-deeb2e98e7d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\dxgi">
+      <UniqueIdentifier>{736099e4-28d1-419f-bb92-011f86ad77bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\dxgi\interface">
+      <UniqueIdentifier>{a45d7c49-da93-470d-97f1-10224714fc46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\dxgi\interface\factory">
+      <UniqueIdentifier>{f27d36b3-e642-4f10-81ed-f90f4674da1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\error">
+      <UniqueIdentifier>{41da2bcd-42f0-4e6a-a89b-72643572e07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\file">
+      <UniqueIdentifier>{8153371f-ef56-442a-82d5-7ad358e5b12f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\gui">
+      <UniqueIdentifier>{54ec0801-3e2e-47cf-b5ee-70135d69f5ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\gui\input">
+      <UniqueIdentifier>{a66769ff-60d4-46c0-ba01-fdf79392ec39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\gui\input\text">
+      <UniqueIdentifier>{9d6a3cff-ae38-4879-99d8-42f6588d1c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\io">
+      <UniqueIdentifier>{91ddc2f0-cf88-4d4b-b3ec-95a194630f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\memory">
+      <UniqueIdentifier>{7e51cd7f-d8f7-4f5e-b3f5-db1655b7f270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\memory\injection">
+      <UniqueIdentifier>{33fb4883-1801-4eaf-8d14-582f03d9806c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\memory\injection\asm">
+      <UniqueIdentifier>{e615242d-e9ab-4d73-ad69-c9983d3ead28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\main">
+      <UniqueIdentifier>{361074a1-8915-4655-8098-05a2ddee9a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\system">
+      <UniqueIdentifier>{63acc776-0d9a-40af-bd01-16ecbaa57f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\system\process">
+      <UniqueIdentifier>{4d8633c3-b3f6-4d4d-a2b9-4c53a60d6f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\string">
+      <UniqueIdentifier>{0f8c1f7a-9456-4650-b31d-2b4f7e4f5437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\os">
+      <UniqueIdentifier>{aca98d40-e74d-4a57-ab5f-39a512caf115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\os\windows">
+      <UniqueIdentifier>{fb116bef-bbe3-49f3-bd5a-05fc53481383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\os\windows\com">
+      <UniqueIdentifier>{3a094e35-2c85-4bfd-84be-5f27652544fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\os\windows\com\interface">
+      <UniqueIdentifier>{84a99b0d-19c2-47f7-a17b-792e1309d0e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\inih">
+      <UniqueIdentifier>{4b70f3a3-8503-4aec-a5af-4672bc1a745f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp">
+      <UniqueIdentifier>{69e636f8-cce6-4285-87cf-c1d48cf1bc58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{bf6ef1a3-e9a7-4f11-99a1-1fd16aa7211b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\inih">
+      <UniqueIdentifier>{ce1cb432-5faf-4d9c-896f-0a171acedc11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\config">
+      <UniqueIdentifier>{70b8f0f4-2f6a-4a45-a5ea-c8cd0f9362e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\dx">
+      <UniqueIdentifier>{945802e3-f586-483b-8994-b4db92878a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\file">
+      <UniqueIdentifier>{85f6eccc-4fb1-428e-85e0-805c65340e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\io">
+      <UniqueIdentifier>{717895c2-1afb-41a0-a235-67cd84c7c143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\main">
+      <UniqueIdentifier>{764dfd2d-0a04-49be-8a10-536bfda69b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\memory">
+      <UniqueIdentifier>{5d6cd422-68e3-4468-be46-c00698936ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\os">
+      <UniqueIdentifier>{f23ad9c3-1c99-407d-9d0b-5136dfefcf58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\string">
+      <UniqueIdentifier>{f51be1e0-2e0b-44a9-8ca3-9bc9e640439d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\os\windows">
+      <UniqueIdentifier>{f25e355d-7a21-4bea-8596-790c7e00246e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\os\windows\com">
+      <UniqueIdentifier>{ab27cee3-c269-4b7b-8b45-f7d2e4c1b69e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\os\windows\com\interface">
+      <UniqueIdentifier>{252df791-2d97-449e-967c-4194d44438af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\memory\injection">
+      <UniqueIdentifier>{bdb79217-1f89-4aa5-bdaa-19d7384a589e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\memory\injection\asm">
+      <UniqueIdentifier>{5b7c5d6c-5d8c-4949-93ee-6c49a389615a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\dx\d3d9">
+      <UniqueIdentifier>{4fffcebc-acdb-4246-83b7-8b495b10a488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\dx\dxgi">
+      <UniqueIdentifier>{2118a951-6b79-46fd-a8d0-8085f8c18f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sp\log">
+      <UniqueIdentifier>{749b4a2e-c769-427d-b706-808baba5fae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\memory\patch">
+      <UniqueIdentifier>{a3d9c24b-7d7e-421a-bbe1-b8ee7b87997c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\gui\console">
+      <UniqueIdentifier>{9abe429a-c78f-4f9b-aeeb-7380a1fc49d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\utility">
+      <UniqueIdentifier>{29750c30-ce0f-4a4e-80f0-5d8921a6c68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\preferences">
+      <UniqueIdentifier>{32d10ff2-4b14-4c7e-8943-d156fbaec5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\d3d11">
+      <UniqueIdentifier>{e7fb805a-d950-48c5-af47-75a2ff94263d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\d3d11\interface">
+      <UniqueIdentifier>{2311b255-ee38-499e-81d0-d0cb437171ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\d3d11\interface\device">
+      <UniqueIdentifier>{b8750df6-a93c-4789-b322-e33d40b8fbcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\d3d11\interface\context">
+      <UniqueIdentifier>{5fe1a197-122c-4a9f-905c-d606b4b019a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\dxgi\interface\device">
+      <UniqueIdentifier>{700887e6-f0c6-4e7c-847b-7d1afd7ab6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sp\dx\dxgi\interface\swapchain">
+      <UniqueIdentifier>{9025ea8b-87db-470c-893f-8769ade64513}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\inih\cpp\INIReader.cpp">
+      <Filter>Source Files\lib\inih</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\inih\ini.c">
+      <Filter>Source Files\lib\inih</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\windows\com\interface\iunknown.cpp">
+      <Filter>Source Files\sp\os\windows\com\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\windows.cpp">
+      <Filter>Source Files\sp\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\windows\com\com_main.cpp">
+      <Filter>Source Files\sp\os\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory\aob_scan.cpp">
+      <Filter>Source Files\sp\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dx\d3d9\d3d9_exports.cpp">
+      <Filter>Source Files\sp\dx\d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dx\d3d9\d3d9_hooks.cpp">
+      <Filter>Source Files\sp\dx\d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dx\d3d9\d3d9_main.cpp">
+      <Filter>Source Files\sp\dx\d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dx\dxgi\dxgi_errors.cpp">
+      <Filter>Source Files\sp\dx\dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dx\dxgi\dxgi_exports.cpp">
+      <Filter>Source Files\sp\dx\dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dx\dxgi\dxgi_hooks.cpp">
+      <Filter>Source Files\sp\dx\dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dx\dxgi\dxgi_main.cpp">
+      <Filter>Source Files\sp\dx\dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config\ini_cfg.cpp">
+      <Filter>Source Files\sp\config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory\injection\asm\x64.cpp">
+      <Filter>Source Files\sp\memory\injection\asm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory\injection\asm\x86.cpp">
+      <Filter>Source Files\sp\memory\injection\asm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dx\dx.cpp">
+      <Filter>Source Files\sp\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\io.cpp">
+      <Filter>Source Files\sp\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\string.cpp">
+      <Filter>Source Files\sp\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory.cpp">
+      <Filter>Source Files\sp\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file.cpp">
+      <Filter>Source Files\sp\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\preferences.cpp">
+      <Filter>Source Files\sp\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files\sp\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log.cpp">
+      <Filter>Source Files\sp\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sp.cpp">
+      <Filter>Source Files\sp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\windows\dll.cpp">
+      <Filter>Source Files\sp\os\windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\dx\d3d9\d3d9.def">
+      <Filter>Source Files\sp\dx\d3d9</Filter>
+    </None>
+    <None Include="src\dx\d3d9\d3d9_hooks_asm.asm">
+      <Filter>Source Files\sp\dx\d3d9</Filter>
+    </None>
+    <None Include="src\dx\dxgi\dxgi.def">
+      <Filter>Source Files\sp\dx\dxgi</Filter>
+    </None>
+    <None Include="src\dx\dxgi\dxgi_hooks_asm.asm">
+      <Filter>Source Files\sp\dx\dxgi</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\sp\environment.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\error.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\file.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\io.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\log.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\main.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\os.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\sp.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\string.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\system.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\utilities.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\inih\cpp\INIReader.h">
+      <Filter>Header Files\lib\inih</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\inih\ini.h">
+      <Filter>Header Files\lib\inih</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\gui\input\text\caret.h">
+      <Filter>Header Files\sp\gui\input\text</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\memory\aob_scan.h">
+      <Filter>Header Files\sp\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\memory\pointer.h">
+      <Filter>Header Files\sp\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\memory.h">
+      <Filter>Header Files\sp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\memory\injection\asm\x64.h">
+      <Filter>Header Files\sp\memory\injection\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\memory\injection\asm\x86.h">
+      <Filter>Header Files\sp\memory\injection\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\system\process\child.h">
+      <Filter>Header Files\sp\system\process</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\system\process.h">
+      <Filter>Header Files\sp\system</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dx_main.h">
+      <Filter>Header Files\sp\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d9\d3d9_exports.h">
+      <Filter>Header Files\sp\dx\d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d9\d3d9_hooks.h">
+      <Filter>Header Files\sp\dx\d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d9\d3d9_main.h">
+      <Filter>Header Files\sp\dx\d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\dxgi_errors.h">
+      <Filter>Header Files\sp\dx\dxgi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\dxgi_exports.h">
+      <Filter>Header Files\sp\dx\dxgi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\dxgi_hooks.h">
+      <Filter>Header Files\sp\dx\dxgi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\dxgi_main.h">
+      <Filter>Header Files\sp\dx\dxgi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgiobject_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgiobject.h">
+      <Filter>Header Files\sp\dx\dxgi\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory5_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory1.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory1_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory2.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory2_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory3.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory3_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory4.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory4_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\factory\idxgifactory5.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\io\cmd_ostream.h">
+      <Filter>Header Files\sp\io</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\os\windows\com\com_main.h">
+      <Filter>Header Files\sp\os\windows\com</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\os\windows\com\interface\iunknown.h">
+      <Filter>Header Files\sp\os\windows\com\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\os\windows\com\interface\iunknown_impl.hpp">
+      <Filter>Header Files\sp\os\windows\com\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\config\ini_cfg.h">
+      <Filter>Header Files\sp\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\gui\message_box.h">
+      <Filter>Header Files\sp\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\file\file_overloads.hpp">
+      <Filter>Header Files\sp\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\error\error_code.h">
+      <Filter>Header Files\sp\error</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\io\vk_names.h">
+      <Filter>Header Files\sp\io</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\os\windows\dll.h">
+      <Filter>Header Files\sp\os\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\string\string_overloads.hpp">
+      <Filter>Header Files\sp\string</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\os\win.h">
+      <Filter>Header Files\sp\os</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\os\unix.h">
+      <Filter>Header Files\sp\os</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\file\path.h">
+      <Filter>Header Files\sp\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\main\preferences.h">
+      <Filter>Header Files\sp\main</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\memory\patch.h">
+      <Filter>Header Files\sp\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\memory\patch\byte_patch.h">
+      <Filter>Header Files\sp\memory\patch</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\gui\console\console_output_interface.h">
+      <Filter>Header Files\sp\gui\console</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\gui\console\console_output.h">
+      <Filter>Header Files\sp\gui\console</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\utility\history.h">
+      <Filter>Header Files\sp\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\gui\console\console_message.h">
+      <Filter>Header Files\sp\gui\console</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\gui\console.h">
+      <Filter>Header Files\sp\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\preprocessor.h">
+      <Filter>Header Files\sp\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\preferences\user_setting.h">
+      <Filter>Header Files\sp\preferences</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device1.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device1_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device2.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device2_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device3.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device3_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device4.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device4_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device5.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\device\id3d11device5_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\id3d11devicechild.h">
+      <Filter>Header Files\sp\dx\d3d11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\id3d11devicechild_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext1.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext1_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext2.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext2_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext3.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext3_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext4.h">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\d3d11\interface\context\id3d11devicecontext4_impl.hpp">
+      <Filter>Header Files\sp\dx\d3d11\interface\context</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgiadapter.h">
+      <Filter>Header Files\sp\dx\dxgi\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgiadapter_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice1.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice2.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice3.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice4.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice4_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice1_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice2_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\device\idxgidevice3_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\device</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgisubobject.h">
+      <Filter>Header Files\sp\dx\dxgi\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\idxgisubobject_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain1_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain2.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain2_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain3.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain3_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain4.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain4_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain_impl.hpp">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\dx\dxgi\interface\swapchain\idxgiswapchain1.h">
+      <Filter>Header Files\sp\dx\dxgi\interface\swapchain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\io\keybinds.h">
+      <Filter>Header Files\sp\io</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sp\io\powershell_ostream.h">
+      <Filter>Header Files\sp\io</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

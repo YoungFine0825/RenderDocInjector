@@ -1,0 +1,30 @@
+;  CONTRIBUTORS:
+;    Sean Pesce
+;
+;  Some functions were generated with a modified version of Lin "MavenLin" Min's DLL Wrapper Generator:
+;      https://github.com/mavenlin/Dll_Wrapper_Gen
+
+LIBRARY dxgi.dll
+EXPORTS
+    ApplyCompatResolutionQuirking    = ApplyCompatResolutionQuirking
+    CompatString                     = CompatString
+    CompatValue                      = CompatValue
+    CreateDXGIFactory                = CreateDXGIFactory
+    CreateDXGIFactory1               = CreateDXGIFactory1
+    CreateDXGIFactory2               = CreateDXGIFactory2
+    DXGID3D10CreateDevice            = DXGID3D10CreateDevice
+    DXGID3D10CreateLayeredDevice     = DXGID3D10CreateLayeredDevice
+    DXGID3D10ETWRundown              = DXGID3D10ETWRundown_jmp
+    DXGID3D10GetLayeredDeviceSize    = DXGID3D10GetLayeredDeviceSize
+    DXGID3D10RegisterLayers          = DXGID3D10RegisterLayers
+    DXGIDeclareAdapterRemovalSupport = DXGIDeclareAdapterRemovalSupport
+    DXGIDumpJournal                  = DXGIDumpJournal
+    DXGIGetDebugInterface            = DXGIGetDebugInterface
+    DXGIGetDebugInterface1           = DXGIGetDebugInterface1
+    DXGIReportAdapterConfiguration   = DXGIReportAdapterConfiguration_jmp
+    DXGIRevertToSxS                  = DXGIRevertToSxS
+    PIXBeginCapture                  = PIXBeginCapture_jmp
+    PIXEndCapture                    = PIXEndCapture_jmp
+    PIXGetCaptureState               = PIXGetCaptureState_jmp
+    SetAppCompatStringPointer        = SetAppCompatStringPointer
+    UpdateHMDEmulationStatus         = UpdateHMDEmulationStatus
