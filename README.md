@@ -28,7 +28,7 @@ Renderdoc.dll injector based on SeanPesce/d3d11-wrapper
 
         1、该注入器基于DirectX11，需要先将MuMu模拟器的“显卡渲染模式”设置为“DirectX模式”。
 
-        2、将生成的d3d11.dll和renderdoc.dll（在RenderDoc安装目录下）拷贝至MuMu模拟器安装目录中的device文件夹内（比如：C:\Program Files\Netease\MuMuPlayer-12.0\device）。
+        2、将生成的d3d11.dll和renderdoc.dll（在RenderDoc安装目录下）拷贝至MuMu模拟器安装目录中的device文件夹内（比如：C:\Program Files\Netease\MuMuPlayer-12.0\device或者C:\Program Files\Netease\MuMu\nx_device\12.0\device）。
 
         3、拷贝完后重新运行模拟器，如果注入成功，你会在模拟器窗口左上角看到“Capturing D3D11."的字样。打开renderdoc，attach到进程上（点击：File->Attach to Running Instance，选择”MuMuVMMHeadless“，然后点击右下角”Connect to App"按钮）， 之后可以在Launch Application窗口中Capture了 。
 
