@@ -4,6 +4,20 @@ Renderdoc.dll injector based on SeanPesce/d3d11-wrapper
 
     基于[SeanPesce/d3d11-wrapper: Unfinished, experimental d3d11.dll wrapper for intercepting DirectX 11 function calls. (github.com)](https://github.com/SeanPesce/d3d11-wrapper)实现的Renderdoc.dll 注入器，用于mumu模拟器抓帧使用。
 
+## ⚠️ 使用前请修改路径
+
+下文示例里的路径都是**举例**，请按你自己的安装位置改：
+
+| 路径 | 用在哪 | 示例（不是你机器上的） |
+|---|---|---|
+| **RenderDoc 安装目录** | 从中取 `renderdoc.dll`（位数要和目标进程一致，版本要和 qrenderdoc.exe 一致）；`vulkan\tools\gen_manifest.py` 顶部也写死了这个路径 | `D:\Env\RenderDoc\` |
+| **MuMu 设备目录** | 拷贝 `d3d11.dll` / `renderdoc.dll` 的目标目录 | `C:\Program Files\Netease\MuMuPlayer-12.0\device` |
+
+注意不同 MuMu 版本的目录结构可能不同（例如 MuMu 12 的渲染器目录是
+`%ProgramFiles%\MuMuVMMVbox\Hypervisor`），以你自己的实际安装位置为准。
+
+> Vulkan 渲染模式下的截帧方案见 [`vulkan/`](vulkan/README.md)。
+
 ## Build
 
         使用Visual Studio 2022打开d3d11_wrapper/d3d11_wrapper.sln，在解决方案资源管理器窗口中，右键点击"d3d11_wrapper"项目，选择“生成”。完成后在d3d11_wrapper目录下的Debug或Release目录内可以找到生成的"d3d11.dll"。
